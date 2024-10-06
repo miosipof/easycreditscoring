@@ -1,4 +1,6 @@
+LICENSE.txt
 README.md
+setup.cfg
 setup.py
 easycreditscoring/__init__.py
 easycreditscoring/main.py
