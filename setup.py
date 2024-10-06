@@ -1,6 +1,9 @@
 #!/usr/bin/env python
 from setuptools import setup, find_packages
 
+with open("README.md", "r", encoding="utf-8") as fh:
+    long_description = fh.read()
+
 def get_install_requirements():
     with open('requirements.txt', 'r', encoding='utf-8') as f:
         reqs = [x.strip() for x in f.read().splitlines()]

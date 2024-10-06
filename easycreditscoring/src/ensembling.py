@@ -57,12 +57,12 @@ class Ensembling:
         self.base_models = base_models
         self.model_zoo = model_zoo
 
-    def runEnsemble(self):
+    def runEnsemble(self,performance,shape):
         result = []
 
         Y_preds = []
         for model_name in self.model_list:
-            model = self.base_models[model_name]()
+            model = self.base_models[model_name](performance=performance,shape=shape)
 
             start = time.time()
             model = self.model_zoo.model_fit(model)
