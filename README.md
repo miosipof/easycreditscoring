@@ -29,6 +29,7 @@ Note: the library can be used to get first estimations and to set baselines. Fur
 ## 2. Library structure
 
 
+```
 ├── setup.py
 ├── src
 │   ├── data_cleaning.py	# Data cleaning tools
@@ -38,6 +39,7 @@ Note: the library can be used to get first estimations and to set baselines. Fur
 ├── LICENSE.txt              	 
 ├── requirements.txt         	# List of dependencies
 └── README.md                	# This README file
+```
 
 ## 3. Examples
 
