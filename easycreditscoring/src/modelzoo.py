@@ -129,7 +129,7 @@ class ClassicModel(ABC):
 
 class LogRegression(ClassicModel):
     def set_model(self, performance, shape):
-        self.model = LogisticRegression(random_state=42)
+        self.model = LogisticRegression(solver='lbfgs', max_iter=3000, random_state=42)
 
     # Custom scorer function (convert it to work with make_scorer)
     def custom_scorer(estimator, X, Y):
